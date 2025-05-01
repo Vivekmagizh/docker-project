@@ -28,4 +28,4 @@ RUN set -x \
 
 # Set default working directory
 WORKDIR \opt\nginx
-
+ 
