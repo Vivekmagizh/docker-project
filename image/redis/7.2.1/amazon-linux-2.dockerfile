@@ -43,7 +43,7 @@ RUN set -x \
 
 # Create the final image
 FROM sloopstash/base:v1.1.1 AS finalize_redis_oci_image
-COPY --from=install_redis /usr/local/bin/redis-server /uer/local/bin/redis-server
+COPY --from=install_redis /usr//local/bin/redis-server /usr/local/bin/redis-server
 COPY --from=install_redis /usr/local/bin/redis-cli /usr/local/bin/redis-cli
 COPY --from=create_redis_directories /opt/redis /opt/redis
 
